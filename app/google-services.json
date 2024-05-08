@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "859084925350",
+    "project_id": "international-job-835bf",
+    "storage_bucket": "international-job-835bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859084925350:android:3cab9e5c47504ac9298767",
+        "android_client_info": {
+          "package_name": "com.developercodeworks.internationaljobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859084925350-anh14hedp98gfo3uu4ltgag6shrg5a2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developercodeworks.internationaljobs",
+            "certificate_hash": "cb82267fd1482454de8e4dd8497f6115ef72f697"
+          }
+        },
+        {
+          "client_id": "859084925350-1lr6ma7be0lbcgolho8heq43o5clairq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpX0lq8_U9pB3VPH6jTnBlLYL3FNYVJkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859084925350-1lr6ma7be0lbcgolho8heq43o5clairq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-6035481626535720~2333963182"
+    }
+  ],
+  "configuration_version": "1"
+}

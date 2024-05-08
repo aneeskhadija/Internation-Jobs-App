@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.JobsActivity"
+    android:orientation="vertical">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jobdet_firstlayout"
+        >
+
+    <ImageView
+        android:id="@+id/imagelog"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/applogointer" />
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="backBtn"
+        android:src="@drawable/backbtn" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/coustom_edittext"
+        android:hint="Search"
+        app:cardElevation="15dp"
+        android:id="@+id/editTextSubcat"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Filter_check"
+                android:text="Filter"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fulltime_check"
+                android:text="Full Time "
+                android:textColor="@color/black"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/parttime_check"
+                android:text="Part Time "
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/inteerne_check"
+                android:text="Internee "
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_check"
+                android:text="Contract "
+                android:textColor="@color/black"
+                />
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp">
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_hideNameCode="true"
+            app:ccp_hidePhoneCode="true"
+            android:layout_gravity="center"
+            app:ccp_showFullName="true"
+            android:id="@+id/countryPiker"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/lnSelectCountry"
+            app:cardElevation="10dp"
+            android:layout_marginTop="2dp"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Country"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/catatext"
+        android:text="Android App Developer"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textColor="#03A9F4"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subjob_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+    <com.buntyapps.adhelper.AdmobBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:AdMobBannerID="@string/bnr"
+        android:gravity="center"/>
+
+
+</LinearLayout>
